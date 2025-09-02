@@ -42,8 +42,9 @@ Optimización y exposición de un servidor web.
 
 ---
 
-## Autor
-- **Juan Plata**  
+## Autores
+- **Juan Plata**
+- **Maryori Lasso**  
 Estudiante de Ingeniería Informática  
 Universidad Autónoma de Occidente  
 
