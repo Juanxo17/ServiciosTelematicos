@@ -1,0 +1,38 @@
+zone "plata.com" {
+    type master;
+    file "/etc/bind/db.plata.com";
+};
+
+zone "otrodominio.com" {
+    type master;
+    file "/etc/bind/db.otrodominio.com";
+};
+
+zone "50.168.192.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.192";
+};
+
+zone "servicios.com" {
+    type master;
+    file "/etc/bind/db.servicios.com";
+};
+
+zone "miotrositio.com" {
+    type master;
+    file "/etc/bind/db.miotrositio.com";
+};
+
+zone "empresa.local" {
+    type master;
+    file "/etc/bind/db.empresa.local";
+    allow-transfer { 192.168.50.4; };   # IP del esclavo
+    also-notify { 192.168.50.4; };
+};
+
+zone "parcial.juanplata.com" {
+    type master;
+    file "/etc/bind/db.parcial.juanplata.com";
+    allow-transfer { 192.168.50.4; };  #replicarlo en el esclavo también
+};
+

@@ -1,0 +1,17 @@
+$TTL 86400
+@   IN  SOA     ns.plata.com. admin.plata.com. (
+                    2025082401 ; Serial
+                    3600       ; Refresh
+                    1800       ; Retry
+                    1209600    ; Expire
+                    86400 )    ; Minimum TTL
+
+    IN  NS      ns.plata.com.
+
+; PTR records (IP → Nombre)
+3   IN  PTR     ns.plata.com.
+3   IN  PTR     ns.otrodominio.com.
+2   IN  PTR     aaa.otrodominio.com.
+3   IN   PTR   ns.empresa.local.
+20  IN   PTR   srv1.empresa.local.
+
